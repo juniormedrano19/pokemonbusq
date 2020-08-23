@@ -4,7 +4,7 @@ import { AddPokemon } from './components/AddPokemon'
 import { PokemonGrid } from './components/PokemonGrid'
 
 
-const PokemonExpert = () => {
+const PokemonExpert = ({prueba}) => {
 
     const [pokemon, setPokemon]=useState([])
 
@@ -12,10 +12,10 @@ const PokemonExpert = () => {
 
 
         <>
-        <h2>PokeBúsqueda</h2>
+        <h2 className="subti">PokeBúsqueda</h2>
         <AddPokemon setPokemon={ setPokemon } />
         <hr />
-
+        <div className='mundial'>
         <ol>
             {
                 pokemon.map((pokemon)=>(
@@ -27,7 +27,7 @@ const PokemonExpert = () => {
                 ))
             }
         </ol>
-            
+        </div>
         </>
 
     )

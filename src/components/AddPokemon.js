@@ -33,6 +33,7 @@ setInputValue('');
 
         <input 
         type="text"
+        placeholder="Ingrese el número o el nombre de un pokemón"
         value={ inputValue }
         onChange={ handleInputChange }
         />

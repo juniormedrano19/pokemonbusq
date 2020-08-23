@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    /*centrar verticalmente*/
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contenido ul {
+    text-align: center;
+}
+
+.contenido ul li {
+  
+    padding: 0 80px;
+}
+
+.contenido ul li img {
+    width: 300px;
+    height: 120px;
+    
+}
+
+.contenido ul input {
+    width: 500px;
+    height: 44px;
+    border-radius: 50px;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 0 20px;
+}
+
+.contenido ul input:focus {
+    outline: none;
+}
+
+nav {
+    background-color: #282828;
+}
+
+.lista {
+    margin-top: 20px;
+}
+
+.lista ul {
+    padding-top: 10px;
+}
+
+.lista ul li {
+    
+    padding: 10px 0;
+
+    color: #fff;
+    position: relative;
+    left: 40px;
+    bottom: 10px;
+    list-style-type: none;
+    transition: all .3s ease;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.lista ul li:hover {
+    transform: scale(1.1);
+    color: #fff;
+    
+}
+
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+}
+.contenedor1 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #fff;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url("../img/pokemon3.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.listas {
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.lista1 {
+    width: 33.3%;
+    float: left;
+    padding: 20px;
+   
+   
+}
+
+.lista2 {
+    width: 33.3%;
+    float: left;
+    padding: 20px;
+ 
+    
+   
+}
+
+.lista3 {
+    width: 33.3%;
+    float: left;
+    padding: 20px;
+  
+    
+}
+
+.formulario {
+    width: 33%;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+
+.mensaje img {
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+.catalogo {
+    height: 100vh;
+}
+
+.llamado {
+    height: 150px;
+    background-color: #282828;
+}
+
+.llamado-texto {
+    padding-top: 60px;
+    border-bottom: 2px solid #3b3535;
+    text-align: center;
+    color: #585858;
+}
+
+.llamado-texto p {
+    padding-bottom: 10px;
+}
+
+.llamado-texto ul {
+    list-style-type: none;
+}
+
+.llamado-texto ul li {
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.llamado-texto ul li img {
+    widows: 100%;
+    height: 45px;
+}
+
+.llamado2 {
+    background-color: #282828;
+    color: #585858;
+}
+
+.tabla {
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+.tabla table th {
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+.tabla table td {
+    padding-bottom: 5px;
+    color: #8f8f8f;
+}
+
+footer {
+    padding: 46px 0;
+    text-align: center;
+    color: #585858;
+    background-color: #282828;
+    border-top: 2px solid #3b3535;
+}
+
+.importante{
+   
+    padding: 80px;
+ 
+
+}
+
+.especial{
+    background-color: #21232A;
+}
+
+.indiferente{
+    background-color: #fff;
+}
+
+
+/*Llamado*/
+
+.llamada1 {
+    background-image: url(../img/llamada.jpg);
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.llamada-texto1 {
+    text-align: center;
+}
+
+
+
+button:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background: #152537;
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+    font-size: 18px;
+}

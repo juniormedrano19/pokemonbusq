@@ -50,15 +50,15 @@ tipo==='water' && 'card  animate__animated animate__fadeIn water'
      
         <img src={ url } alt={ nombre } />
        
-        <p>{ nombre } </p>
+        <p className="transformadora">{ nombre } </p>
        
         </div>
     
-        <div  className="card  animate__animated animate__fadeIn flotar  ">
+        <div  className="card sizeCard animate__animated animate__fadeIn flotar  ">
         <p>id: {id} </p>
-            <p>Peso: {peso}kg</p>
+            <p>Peso: {peso} kg</p>
             <p>Tipo: {tipo}</p>
-            <p>Alto: {alto}cm</p>
+            <p>Alto: {alto} cm</p>
         </div>
       
             

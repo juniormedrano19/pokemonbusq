@@ -2,8 +2,10 @@ export const getFetchPokemon=async (pokemon)=>{
 
     const url=`https://pokeapi.co/api/v2/pokemon/${encodeURI(pokemon)}`
 
+
     let resp= await fetch(url);
    let data= await resp.json();
+   
    let {sprites,id,name, weight,height}=await data
    const {other} = sprites
    const {'official-artwork':officialArtwork}=other
@@ -12,7 +14,8 @@ export const getFetchPokemon=async (pokemon)=>{
   
    const {name: nombreTipo}=cero.type
   
-   console.log(data);
+  // console.log(data);
+   
 const objeto={
     id:id,
     nombre:name,
@@ -22,7 +25,12 @@ const objeto={
     alto:height*10,
 
 }
+
   return objeto
+
+
+  
+
 
 
 }

@@ -1,25 +1,28 @@
-*{
-  font-family: Helvetica, Arial, sans-serif;
-}
+
 
 html,body{
-  background-color: #21232A;
-  color:white;
-  font-family: "Helvetica Neue",Arial, Helvetica, sans-serif;
+
+  color:#111;
+
   font-size: 1.2em;
-  padding: 60px;
+  
+
 }
 
 input {
 background: none;
-border: 1px solid #fff;
+border: 1px solid #ccc;
 border-radius: 0.25em;
-color: #fff;
+color: black;
 margin: 0.5em;
 padding: 10px; 
-max-width: 500px;
-width: 100%;
+width: 98%;
 font-size: 1.3em;
+}
+hr{
+  border: 1px solid #bbb;
+  width: 99%;
+  
 }
 
 ::placeholder {
@@ -28,13 +31,17 @@ color: #eee;
 
 button {
 background: none;
-border: 2px solid white;
 color: #61dafb;
 cursor: pointer;
-font-size: 1.3em;
+font-size: 1em;
 text-decoration: none;
 margin-right: 10px;
-padding:10px;
+padding:5px;
+width:230px;
+height: 110px;
+margin-bottom: 20px;
+margin-left: 90px;
+
 }
 
 h2{
@@ -51,6 +58,11 @@ h2{
   flex-wrap: wrap; /*Ajuste*/
 }
 
+.card1-grid{
+  display:flex;
+  flex-direction: row; /*dirección del flex*/
+  flex-wrap: wrap; /*Ajuste*/
+}
 
 
 .card{
@@ -61,6 +73,30 @@ h2{
   margin-right: 10px;
   overflow: hidden; /*Para que los bordes de las imágenes no se salgan del contenedor*/
   
+}
+.card1{
+  align-content: center; /*Alineación al centro*/
+  border: 1px solid grey;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  margin-right: -80px;
+  overflow: hidden; /*Para que los bordes de las imágenes no se salgan del contenedor*/
+}
+.card2{
+  align-content: center; /*Alineación al centro*/
+  border: 1px solid grey;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  margin-right: -80px;
+  overflow: hidden; /*Para que los bordes de las imágenes no se salgan del contenedor*/
+}
+.card1 p{
+  padding: 5px;
+  text-align: center;
+}
+
+.card1 img{
+  max-height: 170px;
 }
 
 .card p{
@@ -81,55 +117,155 @@ h2{
 
 .grass{
   background-color: #A7DB8D  ;
+  color:black;
 }
 
 .bug{
   background-color: #C6D16E;
+  color:black;
 }
 .dark{
-  background-color:#A29288
+  background-color:#A29288;
+  color:black;
 }
 .dragon{
-  background-color:#A27DFA
+  background-color:#A27DFA;
+  color:black;
 }
 .electric{
   background-color:#FAE078;
   color:black;
 }
 .fairy{
-  background-color:#F4BDC9	
+  background-color:#F4BDC9;
+  color:black;
 }
 .fighting{
-  background-color:#D67873
+  background-color:#D67873;
+  color:black;
 }
 .fire{
-  background-color:#F5AC78
+  background-color:#F5AC78;
+  color:black;
 }
 .ghost{
-  background-color:#A292BC
+  background-color:#A292BC;
+  color:black;
 }
 .ground{
-  background-color:#EBD69D
+  background-color:#EBD69D;
+  color:black;
 }
 .ice{
-  background-color:#BCE6E6
+  background-color:#BCE6E6;
+  color:black;
 }
 .normal{
-  background-color:#C6C6A7
+  background-color:#C6C6A7;
+  color:black;
 }
 .poison{
-  background-color:#C183C1
+  background-color:#C183C1;
+  color:black;
 }
 .psychic{
-  background-color:#FA92B2
+  background-color:#FA92B2;
+  color:black;
 }
 .rock{
-  background-color:#D1C17D
+  background-color:#D1C17D;
+  color:black;
 }
 .steel{
 background-color:D1D1E0;
-color:black;
+
 }
 .water{
- background-color:#9DB7F5
+ background-color:#9DB7F5;
+ color:black;
+}
+
+.ocultar{
+  display: none;
+}
+.ocultar2{
+  display: none;
+}
+
+.tipo{
+  width: 10%;
+  font-size: 0.8em;
+  font-weight: bold;
+  transition: all .3s ease;
+}
+.tipo:hover {
+  transform: scale(1.1);
+}
+
+
+.llamada-texto1 h3 {
+  font-size: 32px;
+  color: white;
+  padding-top: 100px;
+  text-align: center;
+  margin-left: 70px;
+ 
+} 
+
+.llamada-texto1 button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  background-color: #ffa630;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 2px;
+  transition: all .3s ease;
+  width: 200px;
+  height: 60px;
+
+}
+.hola{
+ 
+padding: 50px;
+  width: 100%;
+
+}
+
+.cambio{
+  padding: 10px 20px;
+  margin-top: -60px;
+  border: none;
+
+
+  font-size: 20px;
+  border-radius: 2px;
+  transition: all .3s ease;
+  width: 400px;
+  height: 60px;
+  margin-bottom: 90px;
+  margin-top: 20px;
+}
+
+.mundial{
+  padding: 20px;
+}
+.transformadora{
+  text-transform: uppercase;
+ 
+}
+
+.sizeCard{
+margin-top: -80px;
+height: 218px;
+padding-top: 20px;
+
+}
+
+.divPrincipal{
+  margin-left: 90px;
+}
+
+.subti{
+  color:black;
 }

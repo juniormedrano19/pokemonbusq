@@ -8,10 +8,18 @@ export const PokemonGrid = ({pokemon}) => {
     const [prueba, setPrueba]=useState([]);
 
 
-    useEffect(()=>{
-        getFetchPokemon(pokemon)
-        .then(setImages)
-    },[pokemon])
+  useEffect(()=>{
+
+    getFetchPokemon(pokemon)
+    .then(setImages)
+  
+  
+ 
+ 
+  
+},[pokemon])
+
+   
 
 
   /*  const getTipo=async(numero)=>{
@@ -41,7 +49,7 @@ export const PokemonGrid = ({pokemon}) => {
 
     return (
         <>
-        <h3>{ pokemon }</h3>
+       {/*  <h3>{images.nombre}</h3> */}
         <div className="card-grid">
            {
                   <PokemonGridItem 
