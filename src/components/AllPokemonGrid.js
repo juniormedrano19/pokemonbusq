@@ -3,7 +3,7 @@ import { PokemonGridItem } from './PokemonGridItem'
 
 export const AllPokemonGrid = ({id,nombre,url,peso,tipo,alto}) => {
 
-/* console.log(nombre, peso,alto, id) */
+ console.log(nombre, peso,alto, id) 
     return (
         <div>
          

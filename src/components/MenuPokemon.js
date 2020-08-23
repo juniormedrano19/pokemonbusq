@@ -13,7 +13,7 @@ export const MenuPokemon = ({prueba}) => {
     const [state, setstate] = useState(true);
 
     const [example, setExample]=useState([])
-    //console.log(example);
+    console.log(example);
 
     useEffect(()=>{
     

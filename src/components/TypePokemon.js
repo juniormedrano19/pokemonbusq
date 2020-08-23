@@ -52,7 +52,7 @@ cojudo=e.target.value
         return dato != undefined
       });
    
- // console.log(pipa);
+ console.log(pipa);
     
 
   const imagenPokemon=document.querySelector('.imagenPokemon');
