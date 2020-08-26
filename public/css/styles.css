@@ -86,7 +86,7 @@ nav {
 @media (max-width:576px) {
     .contenido ul li {
   
-        padding-left:115px;
+        padding-left:95px;
     }
  
     .contenido ul li img {
@@ -100,7 +100,7 @@ nav {
     }
     .lista ul li {
         position: relative;
-    left: 25px;
+    left: 5px;
     bottom: 10px;
     }
     .lista ul li {
@@ -152,7 +152,8 @@ header {
 @media (max-width:576px) {
     .listas{
      
-     margin-left: 140px ;
+     margin-left: 105px ;
+     margin-bottom: -50px ;
     }
  }
 .lista1 {
@@ -336,3 +337,12 @@ footer {
     font-size: 18px;
 }
 
+@media (max-width:576px) {
+    footer {
+      
+        font-size: 12px;
+        padding: 0;
+        height: 25px;
+       
+    }
+ }
