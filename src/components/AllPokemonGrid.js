@@ -9,7 +9,7 @@ export const AllPokemonGrid = ({id,nombre,url,peso,tipo,alto}) => {
          
         {/* {img.title}*/}
         
-        <div className="divPrincipal">
+        <div className="divPrincipal1">
          
          <div  className={
              

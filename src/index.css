@@ -19,15 +19,44 @@ padding: 10px;
 width: 98%;
 font-size: 1.3em;
 }
+@media (max-width:576px) {
+
+  input{
+    margin-left: -2px;
+    width: 110%;
+    padding: 5px;
+    font-size: 1.2em;
+  }
+  
+    
+  }
 hr{
   border: 1px solid #bbb;
   width: 99%;
   
 }
+@media (max-width:576px) {
+
+  hr{
+  margin-left: -2px;
+    width: 110%;
+    
+  }
+    
+  }
 
 ::placeholder {
 color: #eee;
 }
+
+@media (max-width:576px) {
+
+  ::placeholder {
+    font-size:0.59em;
+    }
+  
+    
+  }
 
 button {
 background: none;
@@ -42,6 +71,16 @@ height: 110px;
 margin-bottom: 20px;
 margin-left: 90px;
 
+}
+@media (max-width:576px) {
+
+button{
+  width:130px;
+height: 100px;
+font-size: 0.9em;
+}
+
+  
 }
 
 h2{
@@ -82,6 +121,14 @@ h2{
   margin-right: -80px;
   overflow: hidden; /*Para que los bordes de las imágenes no se salgan del contenedor*/
 }
+@media (max-width:576px) {
+  .card1{
+    margin-left: 170px;
+    margin-right: 20px;
+   
+  }
+}
+
 .card2{
   align-content: center; /*Alineación al centro*/
   border: 1px solid grey;
@@ -198,10 +245,16 @@ background-color:D1D1E0;
   font-weight: bold;
   transition: all .3s ease;
 }
+
 .tipo:hover {
   transform: scale(1.1);
 }
-
+@media (max-width:576px) {
+  .tipo{
+    width: 21%;
+    margin-left: 5px;
+  }
+}
 
 .llamada-texto1 h3 {
   font-size: 32px;
@@ -211,6 +264,14 @@ background-color:D1D1E0;
   margin-left: 70px;
  
 } 
+
+@media (max-width:576px) {
+  .llamada-texto1 h3{
+    padding-top: 45px;
+    font-size: 20px;
+  }
+}
+
 
 .llamada-texto1 button {
   padding: 10px 20px;
@@ -224,6 +285,15 @@ background-color:D1D1E0;
   width: 200px;
   height: 60px;
 
+}
+@media (max-width:576px) {
+  .llamada-texto1 button{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+   margin-top: 80px;
+  
+  }
 }
 .hola{
  
@@ -246,13 +316,36 @@ padding: 50px;
   margin-bottom: 90px;
   margin-top: 20px;
 }
-
+@media (max-width:576px) {
+  .cambio{
+    margin-left: -150px;
+    margin-right: 30px;
+  }
+}
 .mundial{
   padding: 20px;
 }
+
+@media (max-width:576px) {
+  .mundial{
+    margin-left: -10px;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
 .transformadora{
   text-transform: uppercase;
  
+}
+@media (max-width:576px) {
+  .transformadora{
+    font-size: 0.7em;
+   
+  }
 }
 
 .sizeCard{
@@ -261,11 +354,54 @@ height: 218px;
 padding-top: 20px;
 
 }
+@media (max-width:576px) {
+  .sizeCard{
+    margin-top: -120px;
+    margin-left: -10px;
+    height: 208px;
+  }
+}
 
 .divPrincipal{
   margin-left: 90px;
 }
+@media (max-width:576px) {
+  .divPrincipal{
+    width: 100%;
+    margin-left: 19px;
+  }
+}
+
+
+.divPrincipal1{
+  margin-left: 90px;
+}
+@media (max-width:576px) {
+  .divPrincipal1{
+   width: 300px;
+   margin-left: -180px;
+   
+  }
+}
 
 .subti{
   color:black;
+}
+
+@media (max-width:576px) {
+  .subti{
+    margin-left:-2px;
+  }
+}
+
+.imagenPokemon{
+  color:black;
+}
+
+@media (max-width:576px) {
+  .imagenPokemon{
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 35px;
+  }
 }

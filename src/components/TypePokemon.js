@@ -54,7 +54,9 @@ cojudo=e.target.value
    
  console.log(pipa);
     
-
+           
+   
+    
   const imagenPokemon=document.querySelector('.imagenPokemon');
 
  
@@ -189,7 +191,9 @@ cojudo=e.target.value
             />
             
             </div>
+           
             <div className="imagenPokemon card-grid">
+           
           
          
            </div>

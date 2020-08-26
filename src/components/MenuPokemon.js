@@ -6,21 +6,24 @@ import PokemonExpert from '../PokemonExpert'
 import { TypePokemon } from './TypePokemon';
 import { AllPokemon } from './AllPokemon';
 import { TypePokemonItem } from './TypePokemonItem';
+import { useFetchHooks } from '../hooks/useFetchHooks';
 
 export const MenuPokemon = ({prueba}) => {
 
     //componente Pokemon expert
     const [state, setstate] = useState(true);
 
-    const [example, setExample]=useState([])
+    /* const [example, setExample]=useState([])
     console.log(example);
 
     useEffect(()=>{
     
         probando()
         .then(setExample)
-       //console.log(example);
-    },[]) 
+      
+    },[])  */
+    const {data:images,loading}= useFetchHooks();
+    console.log(images);
     
 
    const seleccionarPokemon=(e)=>{
@@ -56,7 +59,7 @@ export const MenuPokemon = ({prueba}) => {
          const prueba2=document.querySelector('.prueba2')
          const prueba3=document.querySelector('.prueba3')
 
-         ReactDOM.render( <TypePokemon example={ example } />,prueba2)
+         ReactDOM.render( <TypePokemon example={ images } />,prueba2)
      
        
         if(boton2.style.display == 'block'){
@@ -87,7 +90,7 @@ export const MenuPokemon = ({prueba}) => {
          const prueba1=document.querySelector('.prueba1')
          const prueba2=document.querySelector('.prueba2')
          const prueba3=document.querySelector('.prueba3')
-         ReactDOM.render( <AllPokemon mostrarTodos={ example } />,prueba3)
+         ReactDOM.render( <AllPokemon mostrarTodos={ images } />,prueba3)
         if(boton3.style.display = 'block'){
         boton1.style.display = 'block';
         boton3.style.display = 'block';
@@ -103,7 +106,16 @@ export const MenuPokemon = ({prueba}) => {
     return (
 
         <div>
-       
+        { 
+            //operador ternario, si el loading es true muestra 'Cargando' sino 'Data Cargada'
+            //loading ? 'Cargando...' : 'Data cargada'
+
+            //usamos &&(ampersand) and
+            loading && <p className="animate__animated animate__flash">Cargando la BD de Pokemón ...</p>
+            //se utiliza flash para darle una animación de parpadeo
+            
+            
+            }
 
         <div className="principal ">
             <div clasName="contenedor ">

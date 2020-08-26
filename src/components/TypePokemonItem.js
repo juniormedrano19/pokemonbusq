@@ -6,9 +6,10 @@ export const TypePokemonItem = ({id,nombre,url,peso,tipo,alto}) => {
 console.log(nombre, peso,alto, id) 
     return (
         <div>
+       
          
         {/* {img.title}*/}
-        <div className="divPrincipal">
+        <div className="divPrincipal1">
          
          <div  className={
              
